@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marjhune Lase | Portfolio</title>
+
+<!-- GSAP -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<!-- External CSS -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <div class="logo">Portfolio.</div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div>
+      <h4>Hello, it's Me</h4>
+      <h1>Marjhune <span>Lase</span></h1>
+      <h2>And I'm a <span class="typing"></span></h2>
+      <p>A creative Web Developer crafting visually engaging, interactive, and high-performance web experiences.</p>
+    </div>
+
+    <div class="hero-image">
+      <div class="glow"></div>
+      <div class="hex">
+        <img src="photo/5062da64-afd2-4340-9d70-5f23c8e45ac4.jpg">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="container">
+    <div class="section-title">
+      <h2>Education <span>Background</span></h2>
+    </div>
+    <div class="education-timeline">
+      <div class="edu-item">
+        <i class="fas fa-graduation-cap edu-icon"></i>
+        <div class="glass edu-content">
+          <h3 class="edu-title">Laguna State Polytechnic University</h3>
+          <span class="edu-degree">Bachelor of Science in Information Technology</span>
+          <span class="edu-level">College</span>
+        </div>
+        <div class="edu-year">2026</div>
+      </div>
+      
+      <div class="edu-item">
+        <i class="fas fa-laptop-code edu-icon"></i>
+        <div class="edu-year">2023</div>
+        <div class="glass edu-content">
+          <h3 class="edu-title">AVM Foundation Incorporation</h3>
+          <span class="edu-degree">ICT - Computer System Servicing</span>
+          <span class="edu-level">Senior High School</span>
+        </div>
+      </div>
+      
+      <div class="edu-item">
+        <i class="fas fa-school edu-icon"></i>
+        <div class="glass edu-content">
+          <h3 class="edu-title">Unson National High School</h3>
+          <span class="edu-degree">High School</span>
+          <span class="edu-level">Secondary Education</span>
+        </div>
+        <div class="edu-year">2020</div>
+      </div>
+      
+      <div class="edu-item">
+        <i class="fas fa-book-open edu-icon"></i>
+        <div class="edu-year">2016</div>
+        <div class="glass edu-content">
+          <h3 class="edu-title">Sammpaloc Elementary School</h3>
+          <span class="edu-degree">Elementary</span>
+          <span class="edu-level">Primary Education</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <div class="section-title">
+      <h2>My <span>Skills</span></h2>
+    </div>
+    <div class="skills-grid">
+      <div class="glass skill-card">
+        <div class="skill-icon">
+          <i class="fab fa-html5"></i>
+        </div>
+        <div class="skill-circle">
+          <svg width="150" height="150">
+            <defs>
+              <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#00e5ff;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+              </linearGradient>
+            </defs>
+            <circle class="circle-bg" cx="75" cy="75" r="65"></circle>
+            <circle class="circle-progress" cx="75" cy="75" r="65" 
+                    stroke="url(#gradient1)"
+                    stroke-dasharray="408.4" 
+                    stroke-dashoffset="20.42"
+                    data-progress="95"></circle>
+          </svg>
+          <div class="skill-percentage">95%</div>
+        </div>
+        <h3 class="skill-name">HTML & CSS</h3>
+        <p class="skill-description">Expert in modern web design</p>
+      </div>
+      
+      <div class="glass skill-card">
+        <div class="skill-icon">
+          <i class="fab fa-python"></i>
+        </div>
+        <div class="skill-circle">
+          <svg width="150" height="150">
+            <defs>
+              <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#00e5ff;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+              </linearGradient>
+            </defs>
+            <circle class="circle-bg" cx="75" cy="75" r="65"></circle>
+            <circle class="circle-progress" cx="75" cy="75" r="65" 
+                    stroke="url(#gradient2)"
+                    stroke-dasharray="408.4" 
+                    stroke-dashoffset="61.26"
+                    data-progress="85"></circle>
+          </svg>
+          <div class="skill-percentage">85%</div>
+        </div>
+        <h3 class="skill-name">Python</h3>
+        <p class="skill-description">Backend development & scripting</p>
+      </div>
+      
+      <div class="glass skill-card">
+        <div class="skill-icon">
+          <i class="fab fa-php"></i>
+        </div>
+        <div class="skill-circle">
+          <svg width="150" height="150">
+            <defs>
+              <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#00e5ff;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+              </linearGradient>
+            </defs>
+            <circle class="circle-bg" cx="75" cy="75" r="65"></circle>
+            <circle class="circle-progress" cx="75" cy="75" r="65" 
+                    stroke="url(#gradient3)"
+                    stroke-dasharray="408.4" 
+                    stroke-dashoffset="61.26"
+                    data-progress="85"></circle>
+          </svg>
+          <div class="skill-percentage">85%</div>
+        </div>
+        <h3 class="skill-name">PHP</h3>
+        <p class="skill-description">Server-side web development</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <div class="section-title">
+      <h2>My <span>Projects</span></h2>
+    </div>
+    <div class="projects">
+      <div class="glass project" onclick="openProjectModal('project1')">
+        <img src="photo/Brewver_web_Screenshot/1Buyer-Landinf Page.png">
+        <h3>Brewver Ordering System</h3>
+        <p>A comprehensive digital platform designed to streamline the ordering process by enabling efficient menu management, accurate order processing, secure payment handling, and improved customer service within a beverage business.
+      </div>
+      <div class="glass project" onclick="openProjectModal('project2')">
+        <img src="photo/StoryCart_E-Commerce/1Buyer-Homepage.png">
+        <h3>StoryCart E-Commerce</h3>
+        <p>StoryCart is a comprehensive e-commerce platform dedicated to stories and digital content, designed to seamlessly connect buyers, sellers, riders, and administrators through an integrated system that ensures efficient transactions, order management, secure payments, and reliable delivery services.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECT MODAL -->
+<div id="projectModal" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeProjectModal()">&times;</span>
+    
+    <div class="modal-header">
+      <h2 id="modalTitle">Project Title</h2>
+      <p id="modalDescription">Project Description</p>
+    </div>
+    
+    <div class="gallery-container">
+      <button class="gallery-btn prev" onclick="changeSlide(-1)">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      
+      <div class="gallery-slide">
+        <div class="slide-label" id="slideLabel">Admin Panel</div>
+        <img id="galleryImage" src="" alt="Project Screenshot">
+      </div>
+      
+      <button class="gallery-btn next" onclick="changeSlide(1)">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+    
+    <div class="gallery-dots" id="galleryDots"></div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="section-title">
+      <h2>Contact <span>Me</span></h2>
+    </div>
+    <div class="contact-box">
+      <div class="contact-header">
+        <h3>Let's Connect</h3>
+        <p>Feel free to reach out for collaborations or just a friendly chat</p>
+      </div>
+      <div class="contact-item"><i class="fas fa-user"></i><span>Marjhune Lase</span></div>
+      <div class="contact-item"><i class="fas fa-briefcase"></i><span>Web Developer</span></div>
+      <div class="contact-item"><i class="fas fa-envelope"></i><span>your@email.com</span></div>
+      <div class="contact-item"><i class="fas fa-phone"></i><span>+63 912 345 6789</span></div>
+      <div class="contact-item"><i class="fas fa-location-dot"></i><span>Philippines</span></div>
+      <div class="contact-item"><i class="fab fa-github"></i><span>github.com/yourprofile</span></div>
+      <div class="contact-item"><i class="fab fa-linkedin"></i><span>linkedin.com/in/yourprofile</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>&copy; 2026 Marjhune Lase. All rights reserved.</p>
+</footer>
+
+<script>
+/* Typing Effect */
+const text = "Web Developer";
+let i = 0;
+const typing = document.querySelector(".typing");
+
+(function type() {
+  if (i < text.length) {
+    typing.textContent += text[i++];
+    setTimeout(type, 100);
+  }
+})();
+
+/* Skill Circles Animation */
+gsap.registerPlugin(ScrollTrigger);
+
+document.querySelectorAll(".circle-progress").forEach(circle => {
+  const progress = circle.getAttribute('data-progress');
+  const radius = 65;
+  const circumference = 2 * Math.PI * radius;
+  const offset = circumference - (progress / 100) * circumference;
+  
+  gsap.fromTo(circle, 
+    {
+      strokeDashoffset: circumference
+    },
+    {
+      strokeDashoffset: offset,
+      scrollTrigger: {
+        trigger: circle,
+        start: "top 85%",
+        toggleActions: "play none none none"
+      },
+      duration: 2,
+      ease: "power2.out"
+    }
+  );
+});
+
+/* Scroll Animations for Sections */
+gsap.utils.toArray('.glass').forEach((element, index) => {
+  gsap.from(element, {
+    scrollTrigger: {
+      trigger: element,
+      start: "top 85%",
+      toggleActions: "play none none none"
+    },
+    y: 50,
+    opacity: 0,
+    duration: 0.8,
+    delay: index * 0.1,
+    ease: "power2.out"
+  });
+});
+
+/* Smooth scroll for navigation links */
+document.querySelectorAll('.nav-links a').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  });
+});
+
+/* ================= PROJECT MODAL ================= */
+const projectData = {
+  project1: {
+    title: "Brewver Web",
+    description: "E-commerce platform for brewery products",
+    slides: [
+      {
+        label: "Buyer - Landing Page",
+        image: "photo/Brewver_web_Screenshot/1Buyer-Landinf Page.png"
+      },
+      {
+        label: "Buyer - Login",
+        image: "photo/Brewver_web_Screenshot/2Buyer-Login.png"
+      },
+      {
+        label: "Buyer - Register",
+        image: "photo/Brewver_web_Screenshot/3Buyer-Register.png"
+      },
+      {
+        label: "Buyer - Homepage 1",
+        image: "photo/Brewver_web_Screenshot/4Buyer-Homepage1.png"
+      },
+      {
+        label: "Buyer - Homepage 2",
+        image: "photo/Brewver_web_Screenshot/5Buyer-Homepage2.png"
+      },
+      {
+        label: "Buyer - Homepage 3",
+        image: "photo/Brewver_web_Screenshot/6Buyer-Homepage3.png"
+      },
+      {
+        label: "Admin - Dashboard",
+        image: "photo/Brewver_web_Screenshot/1Admin-Dasboard.png"
+      },
+      {
+        label: "Admin - Sales Rep",
+        image: "photo/Brewver_web_Screenshot/2Admin-SalesRep.png"
+      },
+      {
+        label: "Admin - Messages",
+        image: "photo/Brewver_web_Screenshot/3Admin-Messages.png"
+      }
+    ]
+  },
+  project2: {
+    title: "StoryCart E-Commerce",
+    description: "Multi-vendor e-commerce platform with delivery system",
+    slides: [
+      {
+        label: "Buyer - Homepage",
+        image: "photo/StoryCart_E-Commerce/1Buyer-Homepage.png"
+      },
+      {
+        label: "Buyer - Login",
+        image: "photo/StoryCart_E-Commerce/2Buyer-Login.png"
+      },
+      {
+        label: "Buyer - Register 1",
+        image: "photo/StoryCart_E-Commerce/3Buyer-Register1.png"
+      },
+      {
+        label: "Buyer - Register 2",
+        image: "photo/StoryCart_E-Commerce/4Buyer-Register2.png"
+      },
+      {
+        label: "Buyer - Homepage 1",
+        image: "photo/StoryCart_E-Commerce/5Buyer-Homepage1.png"
+      },
+      {
+        label: "Buyer - Homepage 2",
+        image: "photo/StoryCart_E-Commerce/6Buyer-Homepage2.png"
+      },
+      {
+        label: "Buyer - Homepage 3",
+        image: "photo/StoryCart_E-Commerce/7Buyer-Homepage3.png"
+      },
+      {
+        label: "Buyer - Profile",
+        image: "photo/StoryCart_E-Commerce/8Buyer-Porfile.png"
+      },
+      {
+        label: "Buyer - Order History",
+        image: "photo/StoryCart_E-Commerce/9Buyer-Order History.png"
+      },
+      {
+        label: "Buyer - Cart",
+        image: "photo/StoryCart_E-Commerce/10-Buyer-Cart.png"
+      },
+      {
+        label: "Buyer - Messages",
+        image: "photo/StoryCart_E-Commerce/11-Buyer-Messages.png"
+      },
+      {
+        label: "Seller - Register 1",
+        image: "photo/StoryCart_E-Commerce/1Seller-Register.png"
+      },
+      {
+        label: "Seller - Register 2",
+        image: "photo/StoryCart_E-Commerce/2Seller-Register2.png"
+      },
+      {
+        label: "Seller - Product Management",
+        image: "photo/StoryCart_E-Commerce/3Seller- Product Management.png"
+      },
+      {
+        label: "Seller - Profile",
+        image: "photo/StoryCart_E-Commerce/4Seller-Profile.png"
+      },
+      {
+        label: "Seller - Pending Orders",
+        image: "photo/StoryCart_E-Commerce/5Seller-Pending Orders.png"
+      },
+      {
+        label: "Seller - Orders",
+        image: "photo/StoryCart_E-Commerce/6Seller-Orders.png"
+      },
+      {
+        label: "Seller - Reviews",
+        image: "photo/StoryCart_E-Commerce/7Seller-Reviews.png"
+      },
+      {
+        label: "Seller - Messages",
+        image: "photo/StoryCart_E-Commerce/8-Seller-Messages.png"
+      },
+      {
+        label: "Seller - Sales Report",
+        image: "photo/StoryCart_E-Commerce/9Seller-Sales Report.png"
+      },
+      {
+        label: "Seller - Commission Overview",
+        image: "photo/StoryCart_E-Commerce/10-Seller-Commision Overview.png"
+      },
+      {
+        label: "Rider - Register 1",
+        image: "photo/StoryCart_E-Commerce/1Rider-Register1.png"
+      },
+      {
+        label: "Rider - Register 2",
+        image: "photo/StoryCart_E-Commerce/2Rider-Register2.png"
+      },
+      {
+        label: "Rider - Dashboard",
+        image: "photo/StoryCart_E-Commerce/3Rider- Dashboard.png"
+      },
+      {
+        label: "Rider - Deliveries",
+        image: "photo/StoryCart_E-Commerce/4Rider- Deliveries.png"
+      },
+      {
+        label: "Rider - Messages",
+        image: "photo/StoryCart_E-Commerce/5Rider-Messages.png"
+      },
+      {
+        label: "Rider - Profile",
+        image: "photo/StoryCart_E-Commerce/6Rider-Profile.png"
+      },
+      {
+        label: "Admin - All Users",
+        image: "photo/StoryCart_E-Commerce/1Admin-All Users.png"
+      },
+      {
+        label: "Admin - User Approvals",
+        image: "photo/StoryCart_E-Commerce/2Admin-User Approvals.png"
+      },
+      {
+        label: "Admin - Messages",
+        image: "photo/StoryCart_E-Commerce/3Admin-Messages.png"
+      },
+      {
+        label: "Admin - Commission Report",
+        image: "photo/StoryCart_E-Commerce/4Admin-Commisssion Report.png"
+      },
+      {
+        label: "Admin - Statistics",
+        image: "photo/StoryCart_E-Commerce/5Admin-Statistics.png"
+      }
+    ]
+  }
+};
+
+let currentProject = null;
+let currentSlide = 0;
+
+function openProjectModal(projectId) {
+  currentProject = projectData[projectId];
+  currentSlide = 0;
+  
+  document.getElementById('modalTitle').textContent = currentProject.title;
+  document.getElementById('modalDescription').textContent = currentProject.description;
+  
+  updateSlide();
+  createDots();
+  
+  document.getElementById('projectModal').style.display = 'block';
+  document.body.style.overflow = 'hidden';
+}
+
+function closeProjectModal() {
+  document.getElementById('projectModal').style.display = 'none';
+  document.body.style.overflow = 'auto';
+}
+
+function changeSlide(direction) {
+  currentSlide += direction;
+  
+  if (currentSlide < 0) {
+    currentSlide = currentProject.slides.length - 1;
+  } else if (currentSlide >= currentProject.slides.length) {
+    currentSlide = 0;
+  }
+  
+  updateSlide();
+}
+
+function setSlide(index) {
+  currentSlide = index;
+  updateSlide();
+}
+
+function updateSlide() {
+  const slide = currentProject.slides[currentSlide];
+  document.getElementById('slideLabel').textContent = slide.label;
+  document.getElementById('galleryImage').src = slide.image;
+  
+  // Update dots
+  document.querySelectorAll('.dot').forEach((dot, index) => {
+    dot.classList.toggle('active', index === currentSlide);
+  });
+}
+
+function createDots() {
+  const dotsContainer = document.getElementById('galleryDots');
+  dotsContainer.innerHTML = '';
+  
+  currentProject.slides.forEach((_, index) => {
+    const dot = document.createElement('div');
+    dot.className = 'dot';
+    if (index === 0) dot.classList.add('active');
+    dot.onclick = () => setSlide(index);
+    dotsContainer.appendChild(dot);
+  });
+}
+
+// Close modal when clicking outside
+window.onclick = function(event) {
+  const modal = document.getElementById('projectModal');
+  if (event.target === modal) {
+    closeProjectModal();
+  }
+}
+
+// Keyboard navigation
+document.addEventListener('keydown', function(event) {
+  const modal = document.getElementById('projectModal');
+  if (modal.style.display === 'block') {
+    if (event.key === 'Escape') {
+      closeProjectModal();
+    } else if (event.key === 'ArrowLeft') {
+      changeSlide(-1);
+    } else if (event.key === 'ArrowRight') {
+      changeSlide(1);
+    }
+  }
+});
+</script>
+
+</body>
+</html>
